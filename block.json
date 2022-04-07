@@ -1,0 +1,41 @@
+{
+	"apiVersion": 2,
+	"name": "block-course/latest-posts",
+	"version": "0.1.0",
+	"title": "Latest Posts",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Display latest posts.",
+	"keywords": ["Latest", "Posts"],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "latest-posts",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"attributes": {
+		"numberOfPosts": {
+			"type": "number",
+			"default": 5
+		},
+		"displayFeaturedImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"categories": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			}
+		}
+	}
+}
